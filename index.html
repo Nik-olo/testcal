@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wet basis calculator for hemp flower/buds</title>
+  
+  
+  
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+</head>
+
+<body>
+
+  
+    <div class="session">
+      <div class="left">
+        <?xml version="1.0" encoding="UTF-8"?>      
+      </div>
+      <div class="formstyle" autocomplete="off"> 
+        <h4>Hemp Flowers Drying <span>Calculator</span></h4>
+        <p>Please insert 3 of the following values: </p>
+        
+        <div class="floating-label">
+
+          <input placeholder="Initial Weight" type="number" value="40" step=".01" id="Winitial" autocomplete="off">
+          <label for="initialweight">Initial Weight (kg):</label>
+          <div class="icon">
+          <i class="fas fa-weight-hanging" style="font-size:220%"></i>
+       </div>
+     </div>
+
+      <div class="floating-label">
+
+          <input placeholder="Target/Final Weight" type="number" step=".01" id="Wfinal" autocomplete="off">
+          <label for="finalweight">Target/Final Weight (kg):</label>
+          <div class="icon">
+          <i class="fas fa-weight-hanging" style="font-size:220%"></i>
+       </div>
+     </div>
+
+     <div class="floating-label">
+      <input placeholder="Initial Moisture content" type="number" value="70" id="Mcontentinitial" min="1" max="100" autocomplete="off">
+      <label for="initialmoisture">Initial Moisture content (%):</label>
+      <div class="icon">
+            <i class="fas fa-tint" style="font-size:220%"></i>
+
+       </div> 
+  </div>
+
+ <div class="floating-label">
+      <input placeholder="Target/Final Moisture content" type="number" value="15" id="Mcontentfinal" min="1" max="100" autocomplete="off">
+      <label for=finalmoisture">Target/Final Moisture content (%):</label>
+      <div class="icon">
+            <i class="fas fa-tint" style="font-size:220%"></i>
+
+       </div> 
+  </div>
+
+  <div >
+  <button id="submit"> Calculate</button>
+  <button id="reset"  style="background-color: #000;">Reset Values</button>
+</div>
+<br>
+<i> This calculator makes approximations for informational use.</i>
+  <a href="" class="discrete" target="_blank">Made By NiK</a>
+</div>
+
+</div>
+
+<div class="chart-container" style="position: relative; height:20vh; width:60vw">
+<canvas id="line-chart" ></canvas>
+</div>
+
+
+</body>
+
+
+
+
+<script  src="js/index.js"></script>
+</html>
